@@ -61,6 +61,13 @@ h1 {
   margin: 0;
 }
 
+.begin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .label {
   color: var(--accent);
   font-family: Arial, sans-serif;
@@ -203,7 +210,6 @@ h1 {
   height: 100px;
   background: var(--accent);
   border-radius: 999px;
-  margin: 0 0 80px 150px;
   padding: 5px;
 }
 
@@ -236,14 +242,14 @@ h1 {
   background: var(--bg);
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: center;
   background-color: rgb(42, 20, 56);
 
   background-image:
     linear-gradient(
       to right,
       rgba(42, 20, 56, 0) 0%,
-      rgba(42, 20, 56, 0.4) 40%,
+      rgba(42, 20, 56, 0.4) 60%,
       rgb(42, 20, 56) 100%
     ),
     url("image/b1.jpg");
@@ -280,7 +286,7 @@ h1 {
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-left: 600px;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .signature3 {
@@ -292,7 +298,7 @@ h1 {
   height: 180px;
   background: var(--accent);
   border-radius: 999px;
-  margin: 120px 0 0 650px;
+  margin: 100px 0 0 700px;
   padding: 5px;
 }
 
