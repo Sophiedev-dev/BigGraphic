@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kalaba — Lire à Yaoundé</title>
-    <link rel="stylesheet" href="squarecard.css" />
     <style>
       :root {
         --bg: #12261e;
@@ -14,7 +13,9 @@
 
         --text-sm: 24px;
         --text-md: 32px;
-        --text-xl: 96px;
+        --text-lg: 64px;
+        --text-xl: 80px;
+        --text-2xl: 96px;
 
         --space-sm: 16px;
         --space-lg: 96px;
@@ -30,7 +31,8 @@
         height: 1080px;
         box-sizing: border-box;
         padding: var(--space-lg);
-        background: url("image/book.jpg");
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+        background: url("image/image.png");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -44,7 +46,7 @@
       }
 
       .label {
-        color: var(--accent);
+        color: var(--text);
         font-family: Arial, sans-serif;
         font-size: var(--text-md);
         font-weight: 700;
@@ -59,10 +61,11 @@
         font-weight: 400;
         line-height: 1.1;
         letter-spacing: -0.02em;
-      }
-
-      .mark {
-        color: var(--accent);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 150px 0 150px;
       }
 
       .signature {
@@ -79,7 +82,7 @@
       }
 
       .handle {
-        color: var(--text-muted);
+        color: var(--text);
         font-size: var(--text-sm);
       }
     </style>
@@ -89,8 +92,8 @@
       <p class="label">Lire à Yaoundé</p>
 
       <h1 class="quote">
-        <span class="mark">«</span> Un livre ouvert, c'est une porte qui ne se
-        referme jamais. <span class="mark">»</span>
+       </span> Un livre ouvert, c'est une porte qui ne se
+        referme jamais.
       </h1>
 
       <div class="signature">
