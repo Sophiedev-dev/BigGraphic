@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --accent: #fded04;
+
+        /* Le premier set : Dark Mode */
+        --bg: #b41010;
+        --text: #ffffff;
+
+        --radius: 4px;
+        --raduis2: 24px;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        --shadow2: 0 10px 30px rgba(0, 0, 0, 0.9);
+
+        --space-sm: 8px;
+        --space-md: 16px;
+        --space-lg: 40px;
+        --space-xl: 64px;
+
+        --text-xs: 12px;
+        --text-sm: 14px;
+        --text-md: 18px;
+        --text-lg: 24px;
+        --text-xl: 40px;
+        --text-2xl: 64px;
+      }
+      h1,
+      h2 {
+        font-family: Georgia, serif;
+      }
+      p {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: row; gap: var(--space-xl)">
+      <!-- Hero -->
+
+      <div
+        style="
+          width: 600px;
+          height: 300px;
+          background: var(--bg);
+          padding: var(--space-md);
+          border-radius: var(--radius);
+          box-shadow: var(--shadow);
+          box-sizing: border-box;
+        "
+      >
+        <p
+          style="
+            font-family: sans-serif;
+            color: var(--text);
+            font-size: var(--text-md);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+          "
+        >
+          Welcome
+        </p>
+        <h2
+          style="
+            font-family: sans-serif;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-size: var(--text-2xl);
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            margin-top: var(--space-md);
+            margin-bottom: var(--space-lg);
+          "
+        >
+          Training
+          <div
+            style="
+              width: 250px;
+              height: 10px;
+              background: rgb(22, 0, 0);
+              border-radius: 999px;
+            "
+          ></div>
+        </h2>
+        <p
+          style="
+            font-family: sans-serif;
+            color: var(--text);
+            font-size: var(--text-md);
+            font-weight: 500;
+            letter-spacing: 0.12em;
+          "
+        >
+          Subheading for the first box
+        </p>
+      </div>
+
+      <!-- Price -->
+
+      <div
+        style="
+          width: 400px;
+          height: 300px;
+          background: var(--bg);
+          padding: var(--space-md);
+          border-radius: var(--radius);
+          box-shadow: var(--shadow);
+          box-sizing: border-box;
+        "
+      >
+        <p
+          style="
+            font-family: sans-serif;
+            color: var(--text);
+            font-size: var(--text-md);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+          "
+        >
+          Welcome
+        </p>
+        <div
+          style="
+            width: 240px;
+            height: 100px;
+            background: rgb(22, 0, 0);
+            border-radius: 999px;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0, 15px, 0, 0;
+          "
+        >
+          <h2
+            style="
+              font-family: sans-serif;
+              color: var(--accent);
+              text-transform: uppercase;
+              font-size: var(--text-2xl);
+              font-weight: 800;
+              letter-spacing: 0.12em;
+              margin: 0;
+            "
+          >
+            -50%
+          </h2>
+        </div>
+
+        <p
+          style="
+            font-family: sans-serif;
+            color: var(--text);
+            font-size: var(--text-md);
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            margin-top: var(--space-lg);
+          "
+        >
+          Subheading for the first box
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

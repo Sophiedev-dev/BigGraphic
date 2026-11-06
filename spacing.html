@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --accent: #ff3366;
+        --bg: #1a1a2e;
+        --surface: #0a0a0a;
+        --text: #ffffff;
+        --text-muted: #a0a0c0;
+        --radius: 16px;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        --space-sm: 8px;
+        --space-md: 16px;
+        --space-lg: 40px;
+        --space-xl: 64px;
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 40px">
+    <div
+      style="
+        width: 400px;
+        padding: var(--space-lg);
+        background: var(--surface);
+        border-radius: var(--radius);
+        font-family: sans-serif;
+      "
+    >
+      <p
+        style="
+          margin: 0;
+          color: var(--accent);
+          font-size: 12px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          margin: 0 0 var(--space-sm) 0;
+        "
+      >
+        Nouveau
+      </p>
+      <h1 style="margin: 0 0 var(--space-md) 0; color: var(--text)">
+        Titre principal
+      </h1>
+
+      <p style="margin: 0; color: var(--text-muted)">Une phrase de soutien.</p>
+    </div>
+  </body>
+</html>

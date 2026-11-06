@@ -1,0 +1,64 @@
+:root {
+  --bg: #2a1a12;
+  --surface: #3d271b;
+  --text: #fbf3e6;
+  --text-muted: #c9b8a6;
+  --accent: #2bb3a3;
+
+  --text-sm: 32px;
+  --text-md: 44px;
+  --text-xl: 160px;
+}
+
+.canvas {
+  width: 1080px;
+  height: 1920px;
+  box-sizing: border-box;
+  padding: 250px 96px;
+  background: linear-gradient(var(--bg) 0%, var(--surface) 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.label {
+  color: var(--accent);
+  font-family: Arial;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero {
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  font-size: var(--text-xl);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.info {
+  color: var(--accent);
+  font-family: Arial;
+  font-size: var(--text-md);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.handle {
+  color: var(--accent);
+  font-family: Arial;
+  font-size: var(--text-md);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.brand {
+  color: var(--text);
+  font-family: Arial;
+  font-size: var(--text-md);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}

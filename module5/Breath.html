@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Examen 5.3 - Room to Breathe</title>
+    <style>
+      :root {
+        --accent: #fded04;
+
+        /* Le premier set : Dark Mode */
+        --bg: #b41010;
+        --text: #ffffff;
+
+        --radius: 4px;
+        --raduis2: 24px;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        --shadow2: 0 10px 30px rgba(0, 0, 0, 0.9);
+
+        --space-sm: 8px;
+        --space-md: 16px;
+        --space-lg: 40px;
+        --space-xl: 64px;
+
+        --text-xs: 12px;
+        --text-sm: 14px;
+        --text-md: 18px;
+        --text-lg: 24px;
+        --text-xl: 40px;
+        --text-2xl: 64px;
+      }
+      h1,
+      h2 {
+        font-family: Georgia, serif;
+      }
+      p {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      margin: 0;
+    "
+  >
+    <!-- LE CONTENEUR PRINCIPAL ÉTOUFFÉ -->
+    <div
+      style="
+        width: 450px;
+        height: 580px;
+        background: #16213e;
+        border-radius: var(--radius);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        padding: var(--space-lg);
+        box-sizing: border-box;
+      "
+    >
+      <!-- ACCENT / BADGE -->
+      <div
+        style="
+          background: #ff3366;
+          color: white;
+          font-size: var(--text-sm);
+          font-weight: bold;
+          padding: 6px 6px;
+          border-radius: var(--radius);
+          width: fit-content;
+          margin-bottom: var(--space-lg);
+          letter-spacing: 0.1em;
+        "
+      >
+        LIVE EVENT
+      </div>
+
+      <!-- LABEL CONCERNÉ -->
+      <p
+        style="
+          color: #a0a0c0;
+          font-size: var(--text-md);
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        "
+      >
+        Advanced UI Masterclass
+      </p>
+
+      <!-- TITRE PRINCIPAL -->
+      <h2
+        style="
+          color: #ffffff;
+          font-size: 26px;
+          font-weight: 800;
+          margin-bottom: var(--space-lg);
+          margin-top: var(--space-sm);
+        "
+      >
+        DESIGN JUDGEMENT TECHNIQUES
+      </h2>
+
+      <!-- PARAGRAPHE COMPACT SANS INTERLIGNE -->
+      <p
+        style="
+          color: #e0e0e0;
+          font-size: var(--space-md);
+          margin: 0;
+          line-height: 1.5;
+          margin-bottom: var(--space-lg);
+        "
+      >
+        Learn how proper visual alignment transforms boring components into
+        conversion engines. We cover spatial distribution, structural logic, and
+        layout optimization to guarantee you pass your professional design
+        certification on the first try without wasting months guess-testing
+        rules.
+      </p>
+
+      <!-- SECTION PRIX COMPACTE -->
+      <div
+        style="
+          color: #fcd116;
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: var(--space-lg);
+        "
+      >
+        $49 ONLY
+      </div>
+
+      <!-- BOUTON SANS ESPACE -->
+      <div
+        style="
+          background: #ff3366;
+          color: white;
+          font-size: var(--text-md);
+          font-weight: bold;
+          text-align: center;
+          padding: var(--space-sm);
+          border-radius: 999px;
+          margin: 0;
+          cursor: pointer;
+        "
+      >
+        RESERVE MY SEAT NOW
+      </div>
+    </div>
+  </body>
+</html>
