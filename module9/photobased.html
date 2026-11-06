@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kalaba — Lire à Yaoundé</title>
+    <link rel="stylesheet" href="squarecard.css" />
+    <style>
+      :root {
+        --bg: #12261e;
+        --surface: #1b3a2d;
+        --text: #f3ead8;
+        --text-muted: #b9c4b5;
+        --accent: #e8a33d;
+
+        --text-sm: 24px;
+        --text-md: 32px;
+        --text-xl: 96px;
+
+        --space-sm: 16px;
+        --space-lg: 96px;
+      }
+
+      body {
+        margin: 0;
+        background: #e5e5e5;
+      }
+
+      .canvas {
+        width: 1080px;
+        height: 1080px;
+        box-sizing: border-box;
+        padding: var(--space-lg);
+        background: url("image/book.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      p,
+      h1 {
+        margin: 0;
+      }
+
+      .label {
+        color: var(--accent);
+        font-family: Arial, sans-serif;
+        font-size: var(--text-md);
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .quote {
+        color: var(--text);
+        font-family: Georgia, serif;
+        font-size: var(--text-xl);
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+
+      .mark {
+        color: var(--accent);
+      }
+
+      .signature {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .brand {
+        color: var(--text);
+        font-size: var(--text-md);
+        font-weight: 700;
+      }
+
+      .handle {
+        color: var(--text-muted);
+        font-size: var(--text-sm);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <p class="label">Lire à Yaoundé</p>
+
+      <h1 class="quote">
+        <span class="mark">«</span> Un livre ouvert, c'est une porte qui ne se
+        referme jamais. <span class="mark">»</span>
+      </h1>
+
+      <div class="signature">
+        <p class="brand">Librairie Kalaba</p>
+        <p class="handle">@kalaba.livres</p>
+      </div>
+    </div>
+  </body>
+</html>
