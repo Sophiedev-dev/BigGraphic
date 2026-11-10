@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="port.css" />
   </head>
   <body>
     <div class="page">
@@ -18,7 +18,7 @@
       </div>
 
       <div class="grid">
-        <!----------------------first graphic----------------------->
+        <!----------------------first graphic : citation photo----------------------->
         <div class="tile">
           <div class="scale">
             <div class="canvas1">
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <!----------------------second graphic----------------------->
+        <!----------------------second graphic : citation verte----------------------->
         <div class="tile">
           <div class="scale">
             <div class="canvas2">
@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <!----------------------third graphic : story----------------------->
+        <!----------------------third graphic : story Bloom----------------------->
         <div class="tile tile-story">
           <div class="scale">
             <div class="canvas4">
@@ -79,7 +79,7 @@
           </div>
         </div>
 
-        <!----------------------fourth graphic----------------------->
+        <!----------------------fourth graphic : Café Mbolo----------------------->
         <div class="tile">
           <div class="scale">
             <div class="canvas5">
@@ -104,55 +104,58 @@
           </div>
         </div>
 
-        <!----------------------fifth graphic : logo----------------------->
+        <!----------------------fifth graphic : logo CareCore----------------------->
         <div class="tile">
           <div class="scale">
             <div class="canvas6 reveal">
               <svg class="mark" width="640" height="640" viewBox="0 0 100 100">
+                <!-- Les masques : ils "percent" les trous dans les cercles -->
+                <defs>
+                  <mask id="trou-droite">
+                    <rect
+                      x="-10"
+                      y="-10"
+                      width="120"
+                      height="120"
+                      fill="white"
+                    />
+                    <circle cx="90" cy="50" r="30" fill="black" />
+                  </mask>
+                  <mask id="trou-gauche">
+                    <rect
+                      x="-10"
+                      y="-10"
+                      width="120"
+                      height="120"
+                      fill="white"
+                    />
+                    <circle cx="7" cy="50" r="30" fill="black" />
+                  </mask>
+                </defs>
+
+                <!-- Arc ivoire (droite) -->
                 <circle
+                  mask="url(#trou-droite)"
                   pathLength="1"
                   cx="100"
                   cy="50"
                   r="50"
-                  fill="#12261e"
-                  stroke="#12261e"
+                  fill="var(--logo-light6)"
+                  stroke="var(--logo-light6)"
                 />
+
+                <!-- Arc or (gauche) -->
                 <circle
-                  pathLength="1"
-                  cx="90"
-                  cy="50"
-                  r="30"
-                  fill="var(--bg6)"
-                  stroke="var(--bg6)"
-                />
-                <circle
+                  mask="url(#trou-gauche)"
                   pathLength="1"
                   cx="-4"
                   cy="50"
                   r="50"
-                  fill="#e8a33d"
-                  stroke="#e8a33d"
-                />
-                <circle
-                  pathLength="1"
-                  cx="7"
-                  cy="50"
-                  r="30"
-                  fill="var(--bg6)"
-                  stroke="var(--bg6)"
+                  fill="var(--logo-gold6)"
+                  stroke="var(--logo-gold6)"
                 />
               </svg>
-              <p
-                style="
-                  font-size: 100px;
-                  text-transform: uppercase;
-                  margin: 0;
-                  color: #12261e;
-                  letter-spacing: 0.12em;
-                "
-              >
-                CareCore
-              </p>
+              <p class="name6">CareCore</p>
             </div>
           </div>
         </div>
@@ -163,36 +166,54 @@
             <div class="canvas3">
               <!-- Maison -->
               <svg width="220" height="220" viewBox="0 0 100 100">
-                <polygon points="50,3 90,50 5,50" fill="#12261e" />
-                <rect x="8" y="53" width="80" height="40" fill="#12261e" />
-                <rect x="40" y="60" width="40" height="20" fill="#e8a33d" />
+                <polygon points="50,3 90,50 5,50" fill="var(--main3)" />
+                <rect x="8" y="53" width="80" height="40" fill="var(--main3)" />
+                <rect
+                  x="40"
+                  y="60"
+                  width="40"
+                  height="20"
+                  fill="var(--accent3)"
+                />
               </svg>
 
               <!-- Lune -->
               <svg width="220" height="220" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="40" fill="#e8a33d" />
-                <circle cx="68" cy="40" r="32" fill="#ffffff" />
+                <circle cx="50" cy="50" r="40" fill="var(--accent3)" />
+                <circle cx="68" cy="40" r="32" fill="var(--bg3)" />
               </svg>
 
               <!-- Cible -->
               <svg width="220" height="220" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="45" fill="#12261e" />
-                <circle cx="50" cy="50" r="30" fill="#ffffff" />
-                <circle cx="50" cy="50" r="15" fill="#e8a33d" />
+                <circle cx="50" cy="50" r="45" fill="var(--main3)" />
+                <circle cx="50" cy="50" r="30" fill="var(--bg3)" />
+                <circle cx="50" cy="50" r="15" fill="var(--accent3)" />
               </svg>
 
               <!-- Soleil -->
               <svg width="220" height="220" viewBox="0 0 100 100">
-                <circle cx="50" cy="55" r="30" fill="#e8a33d" />
-                <rect x="5" y="70" width="90" height="25" fill="#12261e" />
+                <circle cx="50" cy="55" r="30" fill="var(--accent3)" />
+                <rect x="5" y="70" width="90" height="25" fill="var(--main3)" />
               </svg>
 
               <!-- Cadenas -->
               <svg width="220" height="220" viewBox="0 0 100 100">
-                <circle cx="50" cy="40" r="25" fill="#12261e" />
-                <circle cx="50" cy="40" r="14" fill="#ffffff" />
-                <rect x="20" y="45" width="60" height="48" fill="#12261e" />
-                <rect x="45" y="60" width="10" height="20" fill="#e8a33d" />
+                <circle cx="50" cy="40" r="25" fill="var(--main3)" />
+                <circle cx="50" cy="40" r="14" fill="var(--bg3)" />
+                <rect
+                  x="20"
+                  y="45"
+                  width="60"
+                  height="48"
+                  fill="var(--main3)"
+                />
+                <rect
+                  x="45"
+                  y="60"
+                  width="10"
+                  height="20"
+                  fill="var(--accent3)"
+                />
               </svg>
             </div>
           </div>

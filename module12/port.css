@@ -1,44 +1,107 @@
-/*----------------------first graphic-----------------------*/
+/* ===================================================================== */
+/*                            PORTFOLIO — CSS                            */
+/* ===================================================================== */
 
-:root {
-  --bg1: #12261e;
-  --surface1: #1b3a2d;
-  --text1: #f3ead8;
-  --text-muted1: #b9c4b5;
-  --accent1: #e8a33d;
-
-  --text-sm: 24px;
-  --text-md: 32px;
-  --text-lg: 64px;
-  --text-xl: 80px;
-  --text-2xl: 96px;
-
-  --space-sm: 16px;
-  --space-lg: 96px;
-}
+/*---------------------- general (toute la page) -----------------------*/
 
 body {
   margin: 0;
-  /* background: #e5e5e5; */
+  background:
+    linear-gradient(rgba(250, 248, 245, 0.8), rgba(250, 248, 245, 0.9)),
+    url("image/back.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+/*---------------------- mise en page du portfolio (12.2) --------------*/
+
+.page {
+  width: 1128px; /* 3 tuiles de 360px + 2 espaces de 24px */
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+
+.intro-name {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color: #1f1a1c;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #5a5458;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Chaque tuile : même taille, mêmes coins, même ombre */
+.tile {
+  width: 360px;
+  height: 360px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  background: #d9d3ca;
+}
+
+/* On réduit le graphique de 1080px à 360px, sans le déformer */
+.scale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.3333);
+  transform-origin: top left;
+}
+
+/* La story (1080 x 1920) est réduite un peu plus, puis centrée */
+.tile-story .scale {
+  transform: scale(0.1875);
+  left: 79px;
+}
+
+/*---------------------- first graphic : citation photo ----------------*/
+
+:root {
+  --text1: #f3ead8;
+
+  --text-md1: 32px;
+  --text-xl1: 96px;
+
+  --space-lg1: 96px;
 }
 
 .canvas1 {
   width: 1080px;
   height: 1080px;
   box-sizing: border-box;
-  padding: var(--space-lg);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 35%);
-  background: url("image/image.png");
+  padding: var(--space-lg1);
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 35%),
+    url("image/image.png");
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-p,
-h1 {
-  margin: 0;
 }
 
 .begin1 {
@@ -50,7 +113,7 @@ h1 {
 .label1 {
   color: var(--text1);
   font-family: Arial, sans-serif;
-  font-size: var(--text-md);
+  font-size: var(--text-md1);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -59,7 +122,7 @@ h1 {
 .quote1 {
   color: var(--text1);
   font-family: Georgia, serif;
-  font-size: var(--text-xl);
+  font-size: var(--text-xl1);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -87,57 +150,45 @@ h1 {
 
 .brand1 {
   color: var(--text1);
-  font-size: var(--text-md);
+  font-size: var(--text-md1);
   font-weight: 700;
 }
 
 .handle1 {
   color: var(--text1);
-  font-size: var(--text-md);
+  font-size: var(--text-md1);
   font-weight: 700;
 }
-/*----------------------second graphic-----------------------*/
+
+/*---------------------- second graphic : citation verte ---------------*/
 
 :root {
   --bg2: #12261e;
-  --surface2: #1b3a2d;
   --text2: #f3ead8;
-  --text-muted2: #b9c4b5;
   --accent2: #e8a33d;
 
-  --text-sm: 24px;
-  --text-md: 32px;
-  --text-xl: 96px;
+  --text-sm2: 24px;
+  --text-md2: 32px;
+  --text-xl2: 96px;
 
-  --space-sm: 16px;
-  --space-lg: 96px;
-}
-
-body {
-  margin: 0;
-  /* background: #e5e5e5; */
+  --space-lg2: 96px;
 }
 
 .canvas2 {
   width: 1080px;
   height: 1080px;
   box-sizing: border-box;
-  padding: var(--space-lg);
+  padding: var(--space-lg2);
   background: var(--bg2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-p,
-h1 {
-  margin: 0;
-}
-
 .label2 {
   color: var(--accent2);
   font-family: Arial, sans-serif;
-  font-size: var(--text-md);
+  font-size: var(--text-md2);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -146,7 +197,7 @@ h1 {
 .quote2 {
   color: var(--text2);
   font-family: Georgia, serif;
-  font-size: var(--text-xl);
+  font-size: var(--text-xl2);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -166,93 +217,77 @@ h1 {
 
 .brand2 {
   color: var(--text2);
-  font-size: var(--text-md);
+  font-size: var(--text-md2);
   font-weight: 700;
 }
 
 .handle2 {
-  color: var(--text);
-  font-size: var(--text-sm);
+  color: var(--text2);
+  font-size: var(--text-sm2);
 }
 
-/*----------------------3r graphic-----------------------*/
+/*---------------------- third graphic : story Bloom -------------------*/
 
 :root {
-  --bg: #ffffff;
-  --accent: #e8662e;
+  --text4: #f5eefb;
+  --text-muted4: #c9a7e3;
+  --accent4: #f2c230;
+  --on-accent4: #2a1438;
+
+  --text-md4: 32px;
+  --text-lg4: 44px;
+  --text-2xl4: 160px;
+
+  --space-lg4: 96px;
 }
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-} */
 
-/* ------------------------------------- fourth desgin --------------------------------*/
-
-:root {
-  --bg: #2a1438;
-  --surface: #7b3fa0;
-  --text: #f5eefb;
-  --text-muted: #c9a7e3;
-  --accent: #f2c230;
-  --on-accent: #2a1438;
-
-  --text-sm: 24px;
-  --text-md: 32px;
-  --text-lg: 46px;
-  --text-xl: 96px;
-  /*story board*/
-  --text-2xl: 160px;
-  --text-md2: 44px;
-  /*story board*/
-  --text-xl2: 80px;
-
-  --space-sm: 16px;
-  --space-lg: 96px;
+.tile-story {
+  background: var(--on-accent4);
 }
 
 .canvas4 {
   width: 1080px;
   height: 1920px;
   box-sizing: border-box;
-  padding: var(--space-lg);
-  background: var(--bg);
+  padding: var(--space-lg4);
+  background:
+    linear-gradient(rgba(42, 20, 56, 0.6), rgba(42, 20, 56, 0.6)),
+    url("image/b1.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(rgba(42, 20, 56, 0.6)), url("image/b1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-p,
-h1 {
-  margin: 0;
 }
 
 .label4 {
-  color: var(--accent);
+  color: var(--accent4);
   font-family: Arial, sans-serif;
-  font-size: var(--text-md);
+  font-size: var(--text-md4);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .quote4 {
-  color: var(--text);
+  color: var(--text4);
   font-family: Georgia, serif;
-  font-size: var(--text-2xl);
+  font-size: var(--text-2xl4);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
+.handle4 {
+  color: var(--text4);
+  font-size: var(--text-lg4);
+  margin: 70px 0 0 0;
+}
+
 .mark4 {
-  color: var(--accent);
+  color: var(--accent4);
   font-weight: 700;
-  font-size: var(--text-md2);
+  font-size: var(--text-lg4);
   margin: 0 0 0 15px;
 }
 
@@ -263,7 +298,7 @@ h1 {
   font-family: Arial, sans-serif;
   width: 600px;
   height: 100px;
-  background: var(--accent);
+  background: var(--accent4);
   border-radius: 999px;
   padding: 5px;
   cursor: pointer;
@@ -272,48 +307,35 @@ h1 {
 
 .signature4:hover {
   background: #fff;
-  color: var(--accent);
   transform: scale(1.05);
   box-shadow:
-    40px 0 100px var(--text),
-    -40px 0 100px var(--text-muted);
-  z-index: 0;
+    40px 0 100px var(--text4),
+    -40px 0 100px var(--text-muted4);
 }
 
 .brand4 {
-  color: var(--on-accent);
-  font-size: var(--text-md2);
+  color: var(--on-accent4);
+  font-size: var(--text-lg4);
   font-weight: 750;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-.handle4 {
-  color: var(--text);
-  font-size: var(--text-md2);
-  margin: 70px 0 0 0;
-}
-
-/* ------------------------------------- fifth desgin --------------------------------*/
+/*---------------------- fourth graphic : Café Mbolo -------------------*/
 
 :root {
-  --bg5: #f4efe8; /* crème */
-  --text5: #1f1a1c; /* brun café */
-  --accent5: #7a1f2b; /* terracotta */
-  --on-accent5: #f4efe8; /* texte sur le terracotta */
-  --soft5: #eadcd0; /* beige, pour le grand soleil */
+  --bg5: #f4efe8; /* ivoire */
+  --text5: #1f1a1c; /* noir doux */
+  --accent5: #7a1f2b; /* bordeaux */
+  --on-accent5: #f4efe8; /* texte sur le bordeaux */
+  --soft5: #eadcd0; /* rose sable, pour le grand soleil */
 
   --text-sm5: 26px;
   --text-md5: 34px;
   --text-xl5: 150px;
 
   --space5: 96px;
-}
-
-body {
-  margin: 0;
-  /* background: #d9d4cc; */
 }
 
 .canvas5 {
@@ -326,11 +348,6 @@ body {
   overflow: hidden;
   font-family: Arial, sans-serif;
   color: var(--text5);
-}
-
-p,
-h1 {
-  margin: 0;
 }
 
 /* Texte vertical le long du bord gauche */
@@ -424,137 +441,14 @@ h1 {
   z-index: 2;
 }
 
-/* ------------------------------------- sixth desgin --------------------------------*/
+/*---------------------- fifth graphic : logo CareCore (luxe) ----------*/
 
 :root {
-  --bg6: #ffffff;
-  --accent6: #e8662e;
+  --bg6: #111111; /* noir */
+  --logo-gold6: #c9a24d; /* or */
+  --logo-light6: #f4efe8; /* ivoire */
 }
 
-/* :root {
-  --bg: #ffffff;
-  --accent: #e8662e;
-} */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-/* ===== ANIMATION AJOUTÉE ===== */
-.mark circle {
-  stroke-width: 3;
-  stroke-dasharray: 1; /* un seul tiret = tout le cercle */
-  stroke-dashoffset: 1; /* tiret caché au départ */
-  fill-opacity: 0; /* couleur invisible au départ */
-  animation:
-    draw 1.5s ease 1.2s forwards,
-    /* démarre après 1.2s */ fill-in 0.5s ease 2.7s forwards; /* 1.2s + 1.5s */
-}
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes fill-in {
-  to {
-    fill-opacity: 1;
-  }
-}
-
-/* ===== REVEAL AJOUTÉ (10.3) ===== */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px); /* était 20px */
-  animation: reveal 1.2s ease forwards; /* était 0.6s */
-}
-@keyframes reveal {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ===================== MISE EN PAGE DU PORTFOLIO (12.2) ===================== */
-
-body {
-  /* background: #ece8e1; */
-  background:
-    linear-gradient(rgba(236, 232, 225, 0.2)), url("image/background.jpeg");
-  font-family: Arial, sans-serif;
-}
-
-.page {
-  width: 1128px; /* 3 tuiles de 360px + 2 espaces de 24px */
-  margin: 0 auto;
-  padding: 60px 0;
-}
-
-.intro {
-  margin-bottom: 40px;
-}
-
-.intro-name {
-  font-family: Georgia, serif;
-  font-size: 40px;
-  color: #1f1a1c;
-  margin-bottom: 8px;
-}
-
-.intro-text {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #5a5458;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-/* Chaque tuile : même taille, mêmes coins, même ombre */
-.tile {
-  width: 360px;
-  height: 360px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  position: relative;
-  background: #d9d3ca;
-}
-
-/* On réduit le graphique de 1080px à 360px, sans le déformer */
-.scale {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scale(0.3333);
-  transform-origin: top left;
-}
-
-/* La story (1080 x 1920) est réduite un peu plus, puis centrée */
-.tile-story .scale {
-  transform: scale(0.1875);
-  left: 79px;
-}
-
-/* Le set d'icônes dans sa propre carte */
-.canvas3 {
-  width: 1080px;
-  height: 1080px;
-  background: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  gap: 80px;
-  padding: 120px;
-  box-sizing: border-box;
-}
-
-/* Le logo dans sa propre carte */
 .canvas6 {
   width: 1080px;
   height: 1080px;
@@ -563,4 +457,71 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.name6 {
+  font-size: 100px;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--logo-light6);
+  letter-spacing: 0.12em;
+}
+
+/* Animation : le logo se dessine (10.2) */
+.mark circle {
+  stroke-width: 3;
+  stroke-dasharray: 1; /* un seul tiret = tout le cercle */
+  stroke-dashoffset: 1; /* tiret caché au départ */
+  fill-opacity: 0; /* couleur invisible au départ */
+  animation:
+    draw 1.5s ease 1.2s forwards,
+    fill-in 0.5s ease 2.7s forwards; /* 1.2s + 1.5s */
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-in {
+  to {
+    fill-opacity: 1;
+    stroke-opacity: 0;
+  }
+}
+
+/* Animation : la carte apparaît (10.3) */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: reveal 1.2s ease forwards;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*---------------------- sixth graphic : icônes (teal et sable) --------*/
+
+:root {
+  --bg3: #0f4c4c; /* teal : le fond et les trous */
+  --main3: #f3e3c3; /* sable : la forme */
+  --accent3: #e07a5f; /* terre cuite : le détail */
+}
+
+.canvas3 {
+  width: 1080px;
+  height: 1080px;
+  box-sizing: border-box;
+  padding: 120px;
+  background: var(--bg3);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 80px;
 }
