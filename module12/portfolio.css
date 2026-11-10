@@ -373,9 +373,183 @@ h1 {
   margin: 70px 0 0 0;
 }
 
+/* ------------------------------------- fifth desgin --------------------------------*/
+
+:root {
+  --bg5: #faf6ee; /* crème */
+  --text5: #3a2418; /* brun café */
+  --accent5: #c75b39; /* terracotta */
+  --on-accent5: #faf6ee; /* texte sur le terracotta */
+  --soft5: #efe3d0; /* beige, pour le grand soleil */
+
+  --text-sm5: 26px;
+  --text-md5: 34px;
+  --text-xl5: 150px;
+
+  --space5: 96px;
+}
+
+body {
+  margin: 0;
+  /* background: #d9d4cc; */
+}
+
+.canvas5 {
+  width: 1080px;
+  height: 1080px;
+  box-sizing: border-box;
+  padding: var(--space5);
+  background: var(--bg5);
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: var(--text5);
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+/* Texte vertical le long du bord gauche */
+.side5 {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  font-size: var(--text-sm5);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.6;
+}
+
+.label5 {
+  color: var(--accent5);
+  font-size: var(--text-sm5);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.title5 {
+  font-family: Georgia, serif;
+  font-size: var(--text-xl5);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  position: relative;
+  z-index: 2;
+}
+
+.title5 em {
+  color: var(--accent5);
+}
+
+/* Le grand soleil qui se lève en bas */
+.sun5 {
+  position: absolute;
+  left: 50%;
+  bottom: -420px;
+  width: 840px;
+  height: 840px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: var(--soft5);
+  z-index: 1;
+}
+
+/* Le prix en tampon rond, légèrement penché */
+.stamp5 {
+  position: absolute;
+  top: var(--space5);
+  right: var(--space5);
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: var(--accent5);
+  color: var(--on-accent5);
+  transform: rotate(-12deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.stamp-price5 {
+  font-family: Georgia, serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.stamp-cur5 {
+  font-size: var(--text-sm5);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.hours5 {
+  position: absolute;
+  bottom: var(--space5);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--text-md5);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  z-index: 2;
+}
+
 /* ------------------------------------- sixth desgin --------------------------------*/
 
 :root {
   --bg6: #ffffff;
   --accent6: #e8662e;
+}
+
+/* :root {
+  --bg: #ffffff;
+  --accent: #e8662e;
+} */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ===== ANIMATION AJOUTÉE ===== */
+.mark circle {
+  stroke-width: 3;
+  stroke-dasharray: 1; /* un seul tiret = tout le cercle */
+  stroke-dashoffset: 1; /* tiret caché au départ */
+  fill-opacity: 0; /* couleur invisible au départ */
+  animation:
+    draw 1.5s ease 1.2s forwards,
+    /* démarre après 1.2s */ fill-in 0.5s ease 2.7s forwards; /* 1.2s + 1.5s */
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill-in {
+  to {
+    fill-opacity: 1;
+  }
+}
+
+/* ===== REVEAL AJOUTÉ (10.3) ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px); /* était 20px */
+  animation: reveal 1.2s ease forwards; /* était 0.6s */
+}
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
