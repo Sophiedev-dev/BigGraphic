@@ -376,11 +376,11 @@ h1 {
 /* ------------------------------------- fifth desgin --------------------------------*/
 
 :root {
-  --bg5: #faf6ee; /* crème */
-  --text5: #3a2418; /* brun café */
-  --accent5: #c75b39; /* terracotta */
-  --on-accent5: #faf6ee; /* texte sur le terracotta */
-  --soft5: #efe3d0; /* beige, pour le grand soleil */
+  --bg5: #f4efe8; /* crème */
+  --text5: #1f1a1c; /* brun café */
+  --accent5: #7a1f2b; /* terracotta */
+  --on-accent5: #f4efe8; /* texte sur le terracotta */
+  --soft5: #eadcd0; /* beige, pour le grand soleil */
 
   --text-sm5: 26px;
   --text-md5: 34px;
