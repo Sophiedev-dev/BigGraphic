@@ -1,0 +1,566 @@
+/*----------------------first graphic-----------------------*/
+
+:root {
+  --bg1: #12261e;
+  --surface1: #1b3a2d;
+  --text1: #f3ead8;
+  --text-muted1: #b9c4b5;
+  --accent1: #e8a33d;
+
+  --text-sm: 24px;
+  --text-md: 32px;
+  --text-lg: 64px;
+  --text-xl: 80px;
+  --text-2xl: 96px;
+
+  --space-sm: 16px;
+  --space-lg: 96px;
+}
+
+body {
+  margin: 0;
+  /* background: #e5e5e5; */
+}
+
+.canvas1 {
+  width: 1080px;
+  height: 1080px;
+  box-sizing: border-box;
+  padding: var(--space-lg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 35%);
+  background: url("image/image.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+.begin1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label1 {
+  color: var(--text1);
+  font-family: Arial, sans-serif;
+  font-size: var(--text-md);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.quote1 {
+  color: var(--text1);
+  font-family: Georgia, serif;
+  font-size: var(--text-xl);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 200px 130px 0 130px;
+}
+
+.signature1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 200px 0 0 0;
+}
+
+.hand1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.brand1 {
+  color: var(--text1);
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
+.handle1 {
+  color: var(--text1);
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+/*----------------------second graphic-----------------------*/
+
+:root {
+  --bg2: #12261e;
+  --surface2: #1b3a2d;
+  --text2: #f3ead8;
+  --text-muted2: #b9c4b5;
+  --accent2: #e8a33d;
+
+  --text-sm: 24px;
+  --text-md: 32px;
+  --text-xl: 96px;
+
+  --space-sm: 16px;
+  --space-lg: 96px;
+}
+
+body {
+  margin: 0;
+  /* background: #e5e5e5; */
+}
+
+.canvas2 {
+  width: 1080px;
+  height: 1080px;
+  box-sizing: border-box;
+  padding: var(--space-lg);
+  background: var(--bg2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+.label2 {
+  color: var(--accent2);
+  font-family: Arial, sans-serif;
+  font-size: var(--text-md);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.quote2 {
+  color: var(--text2);
+  font-family: Georgia, serif;
+  font-size: var(--text-xl);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 30px;
+}
+
+.mark2 {
+  color: var(--accent2);
+}
+
+.signature2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.brand2 {
+  color: var(--text2);
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
+.handle2 {
+  color: var(--text);
+  font-size: var(--text-sm);
+}
+
+/*----------------------3r graphic-----------------------*/
+
+:root {
+  --bg: #ffffff;
+  --accent: #e8662e;
+}
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} */
+
+/* ------------------------------------- fourth desgin --------------------------------*/
+
+:root {
+  --bg: #2a1438;
+  --surface: #7b3fa0;
+  --text: #f5eefb;
+  --text-muted: #c9a7e3;
+  --accent: #f2c230;
+  --on-accent: #2a1438;
+
+  --text-sm: 24px;
+  --text-md: 32px;
+  --text-lg: 46px;
+  --text-xl: 96px;
+  /*story board*/
+  --text-2xl: 160px;
+  --text-md2: 44px;
+  /*story board*/
+  --text-xl2: 80px;
+
+  --space-sm: 16px;
+  --space-lg: 96px;
+}
+
+.canvas4 {
+  width: 1080px;
+  height: 1920px;
+  box-sizing: border-box;
+  padding: var(--space-lg);
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(rgba(42, 20, 56, 0.6)), url("image/b1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+.label4 {
+  color: var(--accent);
+  font-family: Arial, sans-serif;
+  font-size: var(--text-md);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.quote4 {
+  color: var(--text);
+  font-family: Georgia, serif;
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.mark4 {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: var(--text-md2);
+  margin: 0 0 0 15px;
+}
+
+.signature4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  width: 600px;
+  height: 100px;
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.signature4:hover {
+  background: #fff;
+  color: var(--accent);
+  transform: scale(1.05);
+  box-shadow:
+    40px 0 100px var(--text),
+    -40px 0 100px var(--text-muted);
+  z-index: 0;
+}
+
+.brand4 {
+  color: var(--on-accent);
+  font-size: var(--text-md2);
+  font-weight: 750;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.handle4 {
+  color: var(--text);
+  font-size: var(--text-md2);
+  margin: 70px 0 0 0;
+}
+
+/* ------------------------------------- fifth desgin --------------------------------*/
+
+:root {
+  --bg5: #f4efe8; /* crème */
+  --text5: #1f1a1c; /* brun café */
+  --accent5: #7a1f2b; /* terracotta */
+  --on-accent5: #f4efe8; /* texte sur le terracotta */
+  --soft5: #eadcd0; /* beige, pour le grand soleil */
+
+  --text-sm5: 26px;
+  --text-md5: 34px;
+  --text-xl5: 150px;
+
+  --space5: 96px;
+}
+
+body {
+  margin: 0;
+  /* background: #d9d4cc; */
+}
+
+.canvas5 {
+  width: 1080px;
+  height: 1080px;
+  box-sizing: border-box;
+  padding: var(--space5);
+  background: var(--bg5);
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: var(--text5);
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+/* Texte vertical le long du bord gauche */
+.side5 {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  font-size: var(--text-sm5);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.6;
+}
+
+.label5 {
+  color: var(--accent5);
+  font-size: var(--text-sm5);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.title5 {
+  font-family: Georgia, serif;
+  font-size: var(--text-xl5);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  position: relative;
+  z-index: 2;
+}
+
+.title5 em {
+  color: var(--accent5);
+}
+
+/* Le grand soleil qui se lève en bas */
+.sun5 {
+  position: absolute;
+  left: 50%;
+  bottom: -420px;
+  width: 840px;
+  height: 840px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: var(--soft5);
+  z-index: 1;
+}
+
+/* Le prix en tampon rond, légèrement penché */
+.stamp5 {
+  position: absolute;
+  top: var(--space5);
+  right: var(--space5);
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: var(--accent5);
+  color: var(--on-accent5);
+  transform: rotate(-12deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.stamp-price5 {
+  font-family: Georgia, serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.stamp-cur5 {
+  font-size: var(--text-sm5);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.hours5 {
+  position: absolute;
+  bottom: var(--space5);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--text-md5);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  z-index: 2;
+}
+
+/* ------------------------------------- sixth desgin --------------------------------*/
+
+:root {
+  --bg6: #ffffff;
+  --accent6: #e8662e;
+}
+
+/* :root {
+  --bg: #ffffff;
+  --accent: #e8662e;
+} */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ===== ANIMATION AJOUTÉE ===== */
+.mark circle {
+  stroke-width: 3;
+  stroke-dasharray: 1; /* un seul tiret = tout le cercle */
+  stroke-dashoffset: 1; /* tiret caché au départ */
+  fill-opacity: 0; /* couleur invisible au départ */
+  animation:
+    draw 1.5s ease 1.2s forwards,
+    /* démarre après 1.2s */ fill-in 0.5s ease 2.7s forwards; /* 1.2s + 1.5s */
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill-in {
+  to {
+    fill-opacity: 1;
+  }
+}
+
+/* ===== REVEAL AJOUTÉ (10.3) ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px); /* était 20px */
+  animation: reveal 1.2s ease forwards; /* était 0.6s */
+}
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================== MISE EN PAGE DU PORTFOLIO (12.2) ===================== */
+
+body {
+  /* background: #ece8e1; */
+  background:
+    linear-gradient(rgba(236, 232, 225, 0.2)), url("image/background.jpeg");
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  width: 1128px; /* 3 tuiles de 360px + 2 espaces de 24px */
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+
+.intro-name {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color: #1f1a1c;
+  margin-bottom: 8px;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #5a5458;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Chaque tuile : même taille, mêmes coins, même ombre */
+.tile {
+  width: 360px;
+  height: 360px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  background: #d9d3ca;
+}
+
+/* On réduit le graphique de 1080px à 360px, sans le déformer */
+.scale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.3333);
+  transform-origin: top left;
+}
+
+/* La story (1080 x 1920) est réduite un peu plus, puis centrée */
+.tile-story .scale {
+  transform: scale(0.1875);
+  left: 79px;
+}
+
+/* Le set d'icônes dans sa propre carte */
+.canvas3 {
+  width: 1080px;
+  height: 1080px;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 120px;
+  box-sizing: border-box;
+}
+
+/* Le logo dans sa propre carte */
+.canvas6 {
+  width: 1080px;
+  height: 1080px;
+  background: var(--bg6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

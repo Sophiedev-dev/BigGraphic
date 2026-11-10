@@ -181,12 +181,12 @@ h1 {
   --bg: #ffffff;
   --accent: #e8662e;
 }
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
+} */
 
 /* ------------------------------------- fourth desgin --------------------------------*/
 
@@ -474,4 +474,91 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ===================== MISE EN PAGE DU PORTFOLIO (12.2) ===================== */
+
+body {
+  background: #ece8e1;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  width: 1128px; /* 3 tuiles de 360px + 2 espaces de 24px */
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+
+.intro-name {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color: #1f1a1c;
+  margin-bottom: 8px;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #5a5458;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Chaque tuile : même taille, mêmes coins, même ombre */
+.tile {
+  width: 360px;
+  height: 360px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  background: #d9d3ca;
+}
+
+/* On réduit le graphique de 1080px à 360px, sans le déformer */
+.scale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.3333);
+  transform-origin: top left;
+}
+
+/* La story (1080 x 1920) est réduite un peu plus, puis centrée */
+.tile-story .scale {
+  transform: scale(0.1875);
+  left: 79px;
+}
+
+/* Le set d'icônes dans sa propre carte */
+.canvas3 {
+  width: 1080px;
+  height: 1080px;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 120px;
+  box-sizing: border-box;
+}
+
+/* Le logo dans sa propre carte */
+.canvas6 {
+  width: 1080px;
+  height: 1080px;
+  background: var(--bg6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
