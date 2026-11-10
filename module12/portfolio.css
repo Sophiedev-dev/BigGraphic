@@ -178,6 +178,19 @@ h1 {
 /*----------------------3r graphic-----------------------*/
 
 :root {
+  --bg: #ffffff;
+  --accent: #e8662e;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ------------------------------------- fourth desgin --------------------------------*/
+
+:root {
   --bg: #2a1438;
   --surface: #7b3fa0;
   --text: #f5eefb;
@@ -198,97 +211,6 @@ h1 {
   --space-sm: 16px;
   --space-lg: 96px;
 }
-
-.canvas3 {
-  width: 1200px;
-  height: 628px;
-  box-sizing: border-box;
-  padding: var(--space-lg);
-  background: var(--bg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(42, 20, 56);
-
-  background-image:
-    linear-gradient(
-      to right,
-      rgba(42, 20, 56, 0) 0%,
-      rgba(42, 20, 56, 0.4) 60%,
-      rgb(42, 20, 56) 100%
-    ),
-    url("image/b1.jpg");
-
-  background-size:
-    50% 100%,
-    50% 100%;
-  background-position:
-    left center,
-    left center;
-  background-repeat: no-repeat;
-}
-
-p,
-h1 {
-  margin: 0;
-}
-
-.label3 {
-  color: var(--accent);
-  font-family: Arial, sans-serif;
-  font-size: var(--text-sm);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-left: 700px;
-}
-
-.quote3 {
-  color: var(--text);
-  font-family: Georgia, serif;
-  font-size: var(--text-xl2);
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin-left: 600px;
-  margin-top: 90px;
-}
-
-.signature3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  width: 300px;
-  height: 180px;
-  background: var(--accent);
-  border-radius: 999px;
-  margin: 100px 0 0 700px;
-  padding: 5px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-.signature3:hover {
-  background: #fff;
-  color: var(--accent);
-  transform: scale(1.05);
-  box-shadow:
-    40px 0 100px var(--text),
-    -40px 0 100px var(--text-muted);
-  z-index: 0;
-}
-
-.brand3 {
-  color: var(--on-accent);
-  font-size: var(--text-sm);
-  font-weight: 750;
-  font-family: Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-/* ------------------------------------- fourth desgin --------------------------------*/
 
 .canvas4 {
   width: 1080px;
